@@ -10,11 +10,12 @@ D3 (a Java based script for creating Data Driven Documents) is a powerful tool f
 
 For the start, download [_project-folder_](https://github.com/hassanpour/QMSS_G4063/tree/master/lectures/project-folder). It includes a version of D3, and index.html, which is the file we will run to see visualizatins. After skimming Chapter 3 from Sott Murray's _Interactive Data Visualization for the Web_, run a local server at "project folder", where you can load `index.html` (See Chapter 4 of SM book). 
 
-``
+```bash
 cd ~/.../project-folder
 
-python -m SimpleHTTPServer 8888 &
-``
+python -m SimpleHTTPServer 8888 & # Python 2
+python -m http.server 8888 & # Python 3
+```
 
 Now go to <http://localhost:8888/> to see the output from index.html. I recommend using Chrome. Once you open the page, go to View, Developer, JavaScript Console and you familiarize yourself with the environment. Chapters 3 and 5 in SM are going to be helpful. For editing your index.htm file you can use either [_Brackets_](http://brackets.io/) or [_Atom_](https://atom.io/). Both work fine. 
 
@@ -127,7 +128,7 @@ There is a wealth of great examples [on Michael Bostock's GitHub](https://github
 
 We will discuss and execute some of sample visualizaitons using available data from the Primaries tweet dataset. 
 
-
+An example of nested JSON in D3 [at this link](https://bl.ocks.org/stepheneb/1183998).
 
 ----
 
