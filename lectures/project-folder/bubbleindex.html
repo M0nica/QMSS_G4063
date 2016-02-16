@@ -12,6 +12,12 @@ text {
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
+
+d3.json("Sample_JSON.json", function(json) {
+console.log(json); //Log output to console
+});
+
+
 var diameter = 960,
     format = d3.format(",d"),
     color = d3.scale.category20c();
