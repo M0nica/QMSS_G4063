@@ -86,7 +86,7 @@ Here is the first plot at output$wordcloud:
 Then a simple frequency plot:
 
 ```{r}
-times <- as.POSIXct(tweets_BS.df$created_at, format="%a %b %d %H:%M:%S %z %Y")
+times <- as.POSIXct(tweets_shiny.df$created_at, format="%a %b %d %H:%M:%S %z %Y")
 
   output$freq_plot<- renderPlot({
    hist(times, breaks="mins")
